@@ -1,0 +1,106 @@
+/* General styles for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th {
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling the links in the Actions column */
+a {
+  text-decoration: none;
+  color: #007BFF;
+  margin: 0 5px;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Styling the confirmation prompt */
+a:active {
+  color: #ff0000;
+}
+
+/* Add some spacing for the whole table */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add a container with some margin and padding around the table */
+table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Style for the table headers */
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style for table rows */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Add some padding and hover effect to the table cells */
+td {
+  transition: background-color 0.3s ease;
+}
+
+td:hover {
+  background-color: #f0f0f0;
+}
+
+/* Make sure the action buttons are not too wide and spaced well */
+td a {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+td a:hover {
+  background-color: #0056b3;
+}
+
+/* Style for delete link */
+td a:nth-child(2) {
+  background-color: #dc3545;
+}
+
+td a:nth-child(2):hover {
+  background-color: #c82333;
+}
