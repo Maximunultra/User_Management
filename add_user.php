@@ -31,8 +31,14 @@ try {
         ':username' => $username,
         ':password' => $password
     ]);
-    echo json_encode(['success' => true]);
+
+    // Get the ID of the newly added user
+    $newId = $conn->lastInsertId();
+
+    // Return success along with the new user ID
+    echo json_encode(['success' => true, 'id' => $newId]);
+
 } catch (PDOException $e) {
-    echo json_encode(['error' => $e->getMessage()]);
+    echo json_encode(['success' => false, 'error' => $e->getMessage()]);
 }
 ?>
